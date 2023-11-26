@@ -6,7 +6,7 @@ function App():ReactElement {
 
   return (
     <>
-      <Stars count={6}/>
+      <Stars count={5}/>
     </>
   )
 }

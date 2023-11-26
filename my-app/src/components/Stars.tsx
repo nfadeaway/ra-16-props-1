@@ -6,9 +6,7 @@ const Stars = ({count= 0}): ReactElement  => {
     let stars: ReactElement[] = [];
 
     if (count > 0 && count < 6) {
-        for (let i= 0; i < count; i++) {
-            stars.push(<li key={i}><Star/></li>);
-        }
+        stars = [...Array(count)].map((_, idx) => <Star key={idx} />)
     } else {
         return (<></>);
     }
